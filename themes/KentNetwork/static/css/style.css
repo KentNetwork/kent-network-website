@@ -82,7 +82,7 @@ section {
         max-width: 50em;
     }
 
-    section.wide {
+    .wide {
 	max-width: 60em;
     }
     
