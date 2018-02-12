@@ -5,7 +5,7 @@
             {{ if .HasChildren }}
           <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
               <div>
-              <a href="javascript:;">
+              <a href="{{ .URL }}">
                   {{ .Pre }}
                   <span>{{ .Name }}</span>
               </a>

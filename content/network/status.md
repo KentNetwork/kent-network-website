@@ -1,7 +1,7 @@
 ---
 layout: single
-title: Services
+title: Status
 menu:
     main:
-        weight: 3
+        parent: network
 ---

@@ -11,3 +11,20 @@ theme = "KentNetwork"
     weight = 1
     identifier = "home"
     url = "/"
+
+    [[menu.main]]
+    name = "Network"
+    weight = 2
+    identifier = "network"
+    url = "/network/about/"
+
+    [[menu.main]]
+    name = "Services"
+    weight = 3
+    identifier = "services"
+    url = "/services/about/"
+
+    [[menu.main]]
+    name = "Flood Detection"
+    parent = "services"
+    url = "https://google.com"
