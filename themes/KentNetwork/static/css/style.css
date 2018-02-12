@@ -71,12 +71,43 @@ section {
     overflow-y: hidden;
 }
 
+.huge-icon svg {
+    width: 6em;
+    height: 6em;
+}
+
 @media(min-width: 1000px) {
     article,
     section {
         max-width: 50em;
     }
 
+    section.wide {
+	max-width: 60em;
+    }
+    
+    .small {
+	width: 150px;  /* Or whatever */
+	height: 150px; /* Or whatever */
+	display: block;
+	margin-left: 1em;
+	margin-right: 1em;
+    }
+
+    .big {
+	max-width: 100%;
+    }
+
+    .big p {
+	vertical-align: middle;
+    }
+    
+    .row {
+	margin-bottom: 7.5em;
+	display: flex;
+	flex-grow: 2;
+    }
+    
     body {
         padding-bottom: 20rem;
     }
@@ -179,10 +210,33 @@ section {
     section {
         max-width: 80em;
     }
+    
+    section.wide {
+	max-width: 105em;
+    }
 }
 
 /* Shrink things on mobile */
-@media(max-width: 1000px) {
+@media(max-width: 1000px) {   
+    .small {
+	width: 100%;  /* Or whatever */
+	height: 100px; /* Or whatever */
+	margin: auto;
+	order: -1;
+	display: table;
+	text-align: center;
+    }
+
+    .big {
+	width: 100%;
+    }
+    
+    .row {
+	margin-bottom: 1em;
+	display: flex;
+	flex-wrap: wrap;
+    }
+
     /* Hide footer */
     footer {
         display: none;
