@@ -14,8 +14,16 @@ html {
     background: #37a3ff;
 }
 
+footer * ::selection {
+    background: #333;
+}
+
 ::-moz-selection {
     background: #37a3ff;
+}
+
+footer * ::-moz-selection {
+    background: #333;
 }
 
 body {
@@ -76,6 +84,38 @@ section {
     height: 6em;
 }
 
+.flex-single {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.flex-double {
+    flex-grow: 2;
+    flex-basis: 0;
+}
+
+footer * ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+footer * a,
+footer * a:active,
+footer * a:visited {
+    color: white;
+}
+
+footer {
+    display: block;
+    background-color: hsla(208,100%,50%,1); /* Slightly darker than the brand colour */
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    color: white;
+}
+
 @media(min-width: 1000px) {
     article,
     section {
@@ -105,55 +145,10 @@ section {
     .row {
 	margin-bottom: 7.5em;
 	display: flex;
-	flex-grow: 2;
     }
     
     body {
         padding-bottom: 20rem;
-    }
-
-    footer * h1 {
-        font-family: sans-serif;
-        font-size: 150%;
-    }
-
-    footer * ul {
-        padding-left: 0;
-        list-style: none;
-    }
-
-    footer * a,
-    footer * a:active,
-    footer * a:visited {
-        color: white;
-    }
-
-    footer {
-        display: block;
-        background-color: hsla(180,99%,24%,1); /* Slightly darker than the brand colour */
-        margin: 0;
-        position: absolute;
-        bottom: 0;
-        left:0;
-        width: 100%;
-    }
-
-    footer * .copy {
-        text-align: center;
-        width: 100%;
-        display: inline-block;
-        font-size: 10px;
-    }
-
-    footer * .social {
-        text-align: center;
-    }
-
-    footer .content {
-        max-width: 960px;
-        margin: auto;
-        color: white;
-        padding: 0.5em;
     }
 
     .col {
@@ -202,6 +197,11 @@ section {
 	max-width: 100%;
 	
     }
+
+    footer section {
+	display: flex;
+	flex-flow: row wrap;
+    }
 }
 
 /* Wide text on very large displays (2.7k + ) */
@@ -237,12 +237,6 @@ section {
 	flex-wrap: wrap;
     }
 
-    /* Hide footer */
-    footer {
-        display: none;
-        visibility: collapse;
-    }
-
     nav ul {
         margin: 0;
         padding-left: 0;
@@ -251,7 +245,7 @@ section {
     nav {
         max-height: 2.9em;
         overflow: hidden;
-        transition: max-height 0.3s;
+        transition: max-height 1s;
         border-top: none;
     }
 
@@ -321,5 +315,11 @@ section {
     .hero {
 	max-width: 100%;	
     }
+
+    footer section {
+	display: flex;
+	flex-flow: column wrap;
+    }
+
 }
 
