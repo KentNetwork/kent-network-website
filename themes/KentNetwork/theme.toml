@@ -1,0 +1,16 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "KentNetwork"
+license = "MIT"
+licenselink = ""
+description = "Theme for the Kent network website"
+homepage = "https://kent.network"
+tags = ["LoRA"]
+features = []
+min_version = "0.36"
+
+[author]
+  name = "Simon Cooksey"
+  homepage = "https://graymalk.in"
+

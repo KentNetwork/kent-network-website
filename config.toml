@@ -1,0 +1,13 @@
+baseurl = "https://kent.network/"
+title = "Kent Network"
+languageCode = "en-gb"
+theme = "KentNetwork"
+
+
+[menu]
+    [[menu.main]]
+    name = "Kent Network"
+    pre = ""
+    weight = 1
+    identifier = "home"
+    url = "/"

@@ -1,0 +1,40 @@
+<nav>
+    <ul>
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+          <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+              <div>
+              <a href="javascript:;">
+                  {{ .Pre }}
+                  <span>{{ .Name }}</span>
+              </a>
+          </div>
+          <ul class="sub">
+              {{ range .Children }}
+              <li{{if $currentNode.IsMenuCurrent .Menu . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
+              {{ end }}
+          </ul>
+        {{else}}
+          <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}>
+          <a href="{{.URL}}">
+              {{ .Pre }}
+              <span>{{ .Name }}</span>
+          </a>
+        {{end}}
+        </li>
+        {{end}}
+    </ul>
+
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('expand')">
+        <svg height="32px" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z
+                M28,14H4c-1.104,0-2,0.896-2,2
+                s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z
+                M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2
+                S29.104,22,28,22z" />
+        </svg>
+    </div>
+</nav>
