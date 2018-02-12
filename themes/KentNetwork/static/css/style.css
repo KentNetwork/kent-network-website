@@ -74,7 +74,7 @@ nav ul * svg {
 
 article,
 section {
-    margin: 30px auto;
+    margin: 0 auto;
     line-height: 1.5;
     padding: 1em;
     overflow-y: hidden;
@@ -107,10 +107,8 @@ footer * a:visited {
 }
 
 footer {
-    display: block;
     background-color: hsla(208,100%,50%,1); /* Slightly darker than the brand colour */
     margin: 0;
-    position: absolute;
     bottom: 0;
     left:0;
     width: 100%;
@@ -148,10 +146,6 @@ footer {
 	display: flex;
     }
     
-    body {
-        padding-bottom: 20rem;
-    }
-
     .col {
         width: 33%;
         display: inline-block;
