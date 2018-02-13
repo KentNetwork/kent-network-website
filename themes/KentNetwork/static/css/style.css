@@ -29,6 +29,7 @@ footer * ::-moz-selection {
 body {
     position: relative;
     margin: 0;
+    margin-top: 50px;
     min-height: 100%;
     font-family: serif;
 }
