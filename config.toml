@@ -1,12 +1,12 @@
 baseurl = "https://kent.network/"
-title = "Kent Network"
+title = "Kent.Network"
 languageCode = "en-gb"
 theme = "KentNetwork"
 
 
 [menu]
     [[menu.main]]
-    name = "Kent Network"
+    name = "Kent.Network"
     pre = ""
     weight = 1
     identifier = "home"
@@ -25,6 +25,12 @@ theme = "KentNetwork"
     url = "/services/about/"
 
     [[menu.main]]
+    name = "About"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
+
+    [[menu.main]]
     name = "Flood Detection"
     parent = "services"
-    url = "https://google.com"
+    url = "https://flood.kent.network/"
