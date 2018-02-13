@@ -5,7 +5,8 @@ title: About
 
 ## Team
 
- - Daniel Knox
- - Martin Ellis
  - Michael Berry
+ - Simon Cooksey
+ - Martin Ellis
  - Martin Faulkner
+ - Daniel Knox
