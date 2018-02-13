@@ -31,8 +31,12 @@ Some of the ways you can get involved:
 If you’re looking to get involved straight away, the following are
 good places to start
 
- - <i>Slack</i> We use [slack link] for discussion and
+ - <i>Slack</i> We use [Slack][slack] for discussion and
    collaboration. There’s a lot of discussion about our systems,
    requests for help and sharing of ideas.
  - <i>Github</i> Have you got some code that you want to share? Join our
-   [github] team
+   [GitHub][github] team
+
+[slack]: https://ttncanterburyuk.slack.com/
+[github]: https://github.com/KentNetwork/
+
