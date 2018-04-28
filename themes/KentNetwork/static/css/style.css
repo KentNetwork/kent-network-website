@@ -68,6 +68,11 @@ nav ul li a {
     padding: 1em 2em 1em 2em;
 }
 
+nav ul * img {
+    height: 2em;
+    margin: -10px 0 -10px 0;
+}
+
 nav ul * svg {
     fill: currentColor;
     height: 2em;

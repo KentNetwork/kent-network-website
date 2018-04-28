@@ -2,27 +2,36 @@
     <ul>
         {{ $currentNode := . }}
         {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-          <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
-              <div>
-              <a href="{{ .URL }}">
-                  {{ .Pre }}
-                  <span>{{ .Name }}</span>
-              </a>
+        {{ if .HasChildren }}
+        <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+          <div>
+            <a href="{{ .URL }}">
+	      {{ if .Pre }} <img alt="{{ .Name }}" src="{{ .Pre }}"></img>
+	      {{ else }}
+              <span>{{ .Name }}</span>
+	      {{ end }}
+            </a>
           </div>
           <ul class="sub">
-              {{ range .Children }}
-              <li{{if $currentNode.IsMenuCurrent .Menu . }} class="active"{{end}}><a href="{{.URL}}"> {{ .Name }} </a> </li>
-              {{ end }}
+            {{ range .Children }}
+            <li{{if $currentNode.IsMenuCurrent .Menu . }} class="active"{{end}}>
+	      <a href="{{.URL}}">
+		{{ .Name }}
+	      </a>
+	    </li>
+            {{ end }}
           </ul>
+	</li>
         {{else}}
-          <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}>
-          <a href="{{.URL}}">
-              {{ .Pre }}
-              <span>{{ .Name }}</span>
+        <li{{if $currentNode.IsMenuCurrent "main" . }} class="active"{{end}}>
+	  <a href="{{ .URL }}">
+	    {{ if .Pre }} <img alt="{{ .Name }}" src="{{ .Pre }}"></img>
+	    {{ else }}
+            <span>{{ .Name }}</span>
+	    {{ end }}
           </a>
+	</li>
         {{end}}
-        </li>
         {{end}}
     </ul>
 

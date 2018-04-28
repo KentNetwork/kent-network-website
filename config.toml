@@ -7,7 +7,7 @@ theme = "KentNetwork"
 [menu]
     [[menu.main]]
     name = "Kent.Network"
-    pre = ""
+    pre = "/images/logo/logo.svg"
     weight = 1
     identifier = "home"
     url = "/"
