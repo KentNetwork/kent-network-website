@@ -35,7 +35,7 @@ good places to start
    collaboration. There’s a lot of discussion about our systems,
    requests for help and sharing of ideas.
  - <i>Github</i> Have you got some code that you want to share? Join our
-   [GitHub][github] team
+   [GitHub][github] team.
 
 [slack]: https://ttncanterburyuk.slack.com/
 [github]: https://github.com/KentNetwork/
