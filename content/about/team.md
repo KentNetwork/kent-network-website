@@ -6,8 +6,8 @@ menu:
         parent: about
 ---
 
- - Michael Berry
- - Simon Cooksey
- - Martin Ellis
- - Martin Faulkner
- - Daniel Knox
+- Michael Berry
+- Simon Cooksey
+- Martin Ellis
+- Martin Faulkner
+- Daniel Knox
