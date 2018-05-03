@@ -19,7 +19,7 @@ ideal for 'Internet of Things' type sensors. A single gateway within a
 LoRaWAN network can easily achieve 15miles of connectivity outside of
 urban environements and provide connectivity to hundreds of sensors.
 
-To make it easy for people to deploy their own sensors,we use The
+To make it easy for people to deploy their own sensors, we use The
 Things Network as part of our
 infrastructure. [The Things Network][ttn] is about creating an
 open-source, decentralized network to exchange data with sensors and
@@ -27,4 +27,3 @@ applications.
 
 
 [ttn]: https://www.thethingsnetwork.org/
-
