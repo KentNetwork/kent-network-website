@@ -20,7 +20,7 @@ menu:
       <img src='/images/team/simon.jpg' class='contact' />
       <span class='name'>Simon Cooksey</span>
       <hr>
-      <span class='role'>Web Developer</span>
+      <span class='role'>Web-Entwickler</span>
     </div>
 </div>
 
@@ -44,7 +44,7 @@ menu:
 
 <div class='member'>
     <div class='profile'>
-      <img src='/images/team/dan.jpg' class='contact' />
+      <img src='/images/team/dan.jpeg' class='contact' />
       <span class='name'>Daniel Knox</span>
       <hr>
       <span class='role'>Backend Developer</span>
