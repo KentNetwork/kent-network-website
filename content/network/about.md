@@ -25,5 +25,8 @@ infrastructure. [The Things Network][ttn] is about creating an
 open-source, decentralized network to exchange data with sensors and
 applications.
 
+We also host our own network server for organisations that need a more 'enterprise'  interface. This is based on the open-source [Loraserver][loraserver] project.
+
 
 [ttn]: https://www.thethingsnetwork.org/
+[loraserver]: https://www.loraserver.io/

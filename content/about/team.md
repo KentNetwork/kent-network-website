@@ -11,7 +11,7 @@ menu:
       <img src='/images/team/michael.jpg' class='contact' />
       <span class='name'>Michael Berry</span>
       <hr>
-      <span class='role'>The Guy with a Full License </span>
+      <span class='role'>JAVA Expert</span>
     </div>
 </div>
 
@@ -38,7 +38,7 @@ menu:
       <img src='/images/team/martin.jpg' class='contact' />
       <span class='name'>Martin Faulkner</span>
       <hr>
-      <span class='role'>Explosives Expert</span>
+      <span class='role'>Electronics expert</span>
     </div>
 </div>
 

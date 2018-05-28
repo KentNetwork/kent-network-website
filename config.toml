@@ -19,18 +19,7 @@ theme = "KentNetwork"
     url = "/network/about/"
 
     [[menu.main]]
-    name = "Services"
-    weight = 3
-    identifier = "services"
-    url = "/services/about/"
-
-    [[menu.main]]
     name = "About"
     weight = 5
     identifier = "about"
     url = "/about/"
-
-    [[menu.main]]
-    name = "Flood Detection"
-    parent = "services"
-    url = "https://flood.kent.network/"
